@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Make an enquiry with St Andrews Companion Services for social companionship visits in and around St Andrews."
+  />
+  <title>Enquiry | St Andrews Companion Services</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html#home" class="logo" aria-label="St Andrews Companion Services home">
+        <span class="logo-mark">SACS</span>
+        <span class="logo-text">St Andrews Companion Services</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#companions">Companions</a>
+        <a href="index.html#activities">Activities</a>
+        <a href="index.html#safety">Safety</a>
+        <a href="enquiry.html" class="nav-cta">Enquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="enquiry-hero">
+      <div class="container enquiry-hero-content">
+        <p class="eyebrow gold-eyebrow">Companionship enquiry</p>
+        <h1>Make an enquiry</h1>
+        <p>
+          Tell us who the service is for, what kind of companionship they would enjoy,
+          and what sort of companion may suit them best. We will then contact you to
+          discuss whether the service is suitable.
+        </p>
+        <a href="index.html" class="button secondary-button">Back to homepage</a>
+      </div>
+    </section>
+
+    <section class="section enquiry-page-section">
+      <div class="container enquiry-page-grid">
+        <aside class="enquiry-side-card" aria-label="What happens after you enquire">
+          <p class="eyebrow">What happens next?</p>
+          <h2>A careful enquiry process.</h2>
+          <ol class="side-list">
+            <li>We review your enquiry.</li>
+            <li>We contact you for a short discovery call.</li>
+            <li>We check whether companionship-only visits are suitable.</li>
+            <li>If appropriate, we suggest a companion match.</li>
+            <li>We arrange a simple first visit.</li>
+          </ol>
+
+          <div class="side-boundary-box">
+            <h3>Service boundary</h3>
+            <p>
+              Companionship only. No personal care, medical care, medication, cooking,
+              cleaning, lifting, mobility assistance, financial handling or emergency support.
+            </p>
+          </div>
+
+          <div class="side-contact-details">
+            <p><strong>Phone:</strong> 07702822246</p>
+            <p><strong>Email:</strong> standrewscompanions@gmail.com</p>
+          </div>
+        </aside>
+
+        <form class="enquiry-form" id="enquiry-form">
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+          </div>
+
+          <div class="form-row">
+            <label for="contact-method">Best way to contact you</label>
+            <select id="contact-method" name="contactMethod" required>
+              <option value="">Please choose</option>
+              <option value="phone">Phone call</option>
+              <option value="email">Email</option>
+              <option value="text">Text message</option>
+              <option value="no-preference">No preference</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="relationship">Who is the service for?</label>
+            <select id="relationship" name="relationship" required>
+              <option value="">Please choose</option>
+              <option value="myself">Myself</option>
+              <option value="parent">A parent</option>
+              <option value="relative">Another relative</option>
+              <option value="friend">A friend or neighbour</option>
+              <option value="other">Someone else</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="recipient-name">Name of person who would receive visits</label>
+            <input type="text" id="recipient-name" name="recipientName" required />
+          </div>
+
+          <div class="form-row">
+            <label for="area">Town / area</label>
+            <input type="text" id="area" name="area" placeholder="For example, St Andrews" required />
+          </div>
+
+          <fieldset class="form-fieldset" data-required-group="companionship">
+            <legend>What kind of companionship are you looking for?</legend>
+            <p class="field-help">Choose any that apply.</p>
+
+            <div class="checkbox-grid">
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="conversation" />
+                <span>Conversation and company</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="gentle-walks" />
+                <span>Gentle walks</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="reading" />
+                <span>Reading together</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="games-puzzles" />
+                <span>Board games, cards or crosswords</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="cafe-visits" />
+                <span>Café visits</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="local-outings" />
+                <span>Local outings</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="social-confidence" />
+                <span>Help building confidence socially</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="companionship" value="not-sure" />
+                <span>Not sure yet</span>
+              </label>
+            </div>
+            <p class="form-error" data-error-for="companionship" aria-live="polite"></p>
+          </fieldset>
+
+          <fieldset class="form-fieldset" data-required-group="personality">
+            <legend>What kind of companion do you think would be the best fit?</legend>
+            <p class="field-help">These preferences help us suggest a good match, but they cannot be guaranteed.</p>
+
+            <div class="checkbox-grid">
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="calm-gentle" />
+                <span>Calm and gentle</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="chatty-outgoing" />
+                <span>Chatty and outgoing</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="patient-listener" />
+                <span>Patient and good at listening</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="cheerful" />
+                <span>Cheerful and light-hearted</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="quiet-reassuring" />
+                <span>Quiet and reassuring</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="books-reading" />
+                <span>Interested in books or reading</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="games-puzzles" />
+                <span>Interested in games or puzzles</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="walks-outdoors" />
+                <span>Interested in walks or outdoors</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="personality" value="no-preference" />
+                <span>No strong preference</span>
+              </label>
+            </div>
+            <p class="form-error" data-error-for="personality" aria-live="polite"></p>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend>Would the person receiving visits feel more comfortable with:</legend>
+
+            <div class="radio-grid">
+              <label class="option-row">
+                <input type="radio" name="companionGender" value="no-preference" checked />
+                <span>No preference</span>
+              </label>
+
+              <label class="option-row">
+                <input type="radio" name="companionGender" value="female" />
+                <span>A female companion</span>
+              </label>
+
+              <label class="option-row">
+                <input type="radio" name="companionGender" value="male" />
+                <span>A male companion</span>
+              </label>
+
+              <label class="option-row">
+                <input type="radio" name="companionGender" value="discuss-by-phone" />
+                <span>Prefer to discuss this by phone</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-fieldset" data-required-group="availability">
+            <legend>Preferred days or times</legend>
+            <p class="field-help">Choose any that apply.</p>
+
+            <div class="checkbox-grid">
+              <label class="option-row">
+                <input type="checkbox" name="availability" value="weekday-mornings" />
+                <span>Weekday mornings</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="availability" value="weekday-afternoons" />
+                <span>Weekday afternoons</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="availability" value="weekend-mornings" />
+                <span>Weekend mornings</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="availability" value="weekend-afternoons" />
+                <span>Weekend afternoons</span>
+              </label>
+
+              <label class="option-row">
+                <input type="checkbox" name="availability" value="flexible" />
+                <span>Flexible</span>
+              </label>
+            </div>
+            <p class="form-error" data-error-for="availability" aria-live="polite"></p>
+          </fieldset>
+
+          <div class="form-row">
+            <label for="message">Is there anything else you would like us to know?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              maxlength="800"
+              placeholder="Please avoid sharing detailed medical information here. We can discuss suitability by phone."
+            ></textarea>
+            <p class="char-count" id="message-count" aria-live="polite">0 / 800 characters</p>
+          </div>
+
+          <label class="checkbox-row boundary-box">
+            <input type="checkbox" id="service-boundary" name="serviceBoundary" required />
+            <span>
+              I understand that this is a social companionship service only and does not
+              include personal care, medical care, medication, cooking, cleaning, lifting,
+              mobility assistance, financial handling or emergency support.
+            </span>
+          </label>
+
+          <label class="checkbox-row">
+            <input type="checkbox" id="consent" name="consent" required />
+            <span>I consent to being contacted about this enquiry.</span>
+          </label>
+
+          <p class="privacy-note">
+            We will only use your details to respond to your enquiry. A full Privacy Policy
+            should be added before public launch.
+          </p>
+
+          <button type="submit" class="button primary-button full-width">Submit enquiry</button>
+
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>St Andrews Companion Services</h2>
+        <p>Friendly social companionship for older adults in and around St Andrews.</p>
+      </div>
+
+      <div>
+        <h3>Important</h3>
+        <p>
+          This is a prototype website. Formal policies should be completed before launch.
+        </p>
+      </div>
+
+      <div>
+        <h3>Service boundary</h3>
+        <p>
+          Companionship only. No personal care, medical care, cooking, cleaning or regulated care services.
+        </p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> St Andrews Companion Services. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
