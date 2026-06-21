@@ -718,7 +718,7 @@ textarea {
   margin-bottom: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   .menu-toggle {
     display: inline-flex;
     align-items: center;
@@ -791,7 +791,7 @@ textarea {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 560px) {
   .container {
     width: min(100% - 24px, var(--max-width));
   }
@@ -938,14 +938,14 @@ textarea {
   padding: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   .portrait-photo {
     height: 340px;
     padding: 0;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 560px) {
   .checkbox-grid,
   .radio-grid {
     grid-template-columns: 1fr;
@@ -1059,7 +1059,7 @@ textarea {
   background: var(--surface);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   .enquiry-page-grid {
     grid-template-columns: 1fr;
   }
@@ -1112,16 +1112,190 @@ textarea {
   padding: 0 !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   .portrait-photo {
     height: auto !important;
     padding: 0 !important;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 560px) {
   .portrait-photo {
     height: auto !important;
     padding: 0 !important;
+  }
+}
+
+
+/* Final responsive polish: shrink first, stack only on true mobile */
+
+@media (max-width: 760px) {
+  .container {
+    width: min(100% - 28px, var(--max-width));
+  }
+
+  .hero {
+    padding: 58px 0 56px;
+  }
+
+  .hero-grid,
+  .intro-grid,
+  .two-column,
+  .image-story-grid,
+  .safety-grid,
+  .contact-grid,
+  .footer-grid,
+  .enquiry-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-heading {
+    font-size: clamp(2.65rem, 11vw, 4.2rem);
+    line-height: 0.95;
+  }
+
+  .enquiry-hero h1 {
+    font-size: clamp(2.55rem, 11vw, 4.2rem);
+  }
+
+  .hero-tagline,
+  .enquiry-hero p:not(.eyebrow) {
+    font-size: 1.12rem;
+  }
+
+  .hero-description,
+  .intro-grid p:last-child,
+  .image-story-grid p,
+  .safety-grid > div:first-child p:not(.eyebrow) {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 54px 0;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 7vw, 2.45rem);
+  }
+
+  .activity-grid,
+  .steps,
+  .safety-list,
+  .companion-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .large-photo {
+    height: 285px;
+  }
+
+  .story-photo {
+    height: 285px;
+  }
+
+  .small-photo {
+    height: 135px;
+  }
+
+  .info-card,
+  .activity-card,
+  .step-card,
+  .enquiry-form,
+  .enquiry-side-card,
+  .companion-content {
+    padding: 22px;
+  }
+
+  .site-nav {
+    top: 82px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(100% - 22px, var(--max-width));
+  }
+
+  .header-content {
+    min-height: 72px;
+  }
+
+  .logo-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 0.75rem;
+  }
+
+  .logo-text {
+    max-width: 145px;
+    font-size: 0.88rem;
+  }
+
+  .site-nav {
+    top: 72px;
+  }
+
+  .hero {
+    padding: 46px 0 46px;
+  }
+
+  .brand-heading {
+    font-size: clamp(2.35rem, 13vw, 3.7rem);
+  }
+
+  .enquiry-hero {
+    padding: 56px 0 48px;
+  }
+
+  .enquiry-hero h1 {
+    font-size: clamp(2.25rem, 12vw, 3.5rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .small-photo-row,
+  .activity-grid,
+  .steps,
+  .safety-list,
+  .companion-grid,
+  .checkbox-grid,
+  .radio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .large-photo,
+  .story-photo {
+    height: 245px;
+  }
+
+  .small-photo {
+    height: 130px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .info-card,
+  .activity-card,
+  .step-card,
+  .enquiry-form,
+  .enquiry-side-card,
+  .companion-content {
+    padding: 20px;
+  }
+
+  .option-row {
+    padding: 10px 11px;
   }
 }
